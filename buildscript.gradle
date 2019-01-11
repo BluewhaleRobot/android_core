@@ -15,17 +15,15 @@
  */
 
 rootProject.buildscript {
-  apply from: "https://github.com/rosjava/rosjava_bootstrap/raw/kinetic/buildscript.gradle"
+  apply from: "https://github.com/bluewhalerobot/rosjava_bootstrap/raw/kinetic/buildscript.gradle"
   dependencies {
     classpath "com.android.tools.build:gradle:3.2.1"
   }
 
   allprojects {
     repositories {
-      jcenter()
-      maven {
-        url "https://maven.google.com"
-      }
+      maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+      maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
     }
   }
 }

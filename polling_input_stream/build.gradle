@@ -26,9 +26,8 @@ targetCompatibility = 1.6
 
 repositories {
   mavenLocal()
-  maven {
-    url 'http://robotbrains.hideho.org/nexus/content/groups/ros-public'
-  }
+  maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+  maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 }
 
 dependencies {
